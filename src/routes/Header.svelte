@@ -23,21 +23,21 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a
-                            href="#"
+                            href="/"
                             class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
                             aria-current="page">게시판</a
                         >
 
                         <a
                             href="#"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                            class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
                             >내 팀</a
                         >
 
                         <a
-                            href="#"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                            >F&Q</a
+                            href="FAQ"
+                            class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
+                            >FAQ</a
                         >
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     <!-- 회원 가입 -->
                     <div class="ml-2">
                         <a
-                            href="#"
+                            href="Signup"
                             class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
                             aria-current="page">Sign up</a
                         >
@@ -135,9 +135,9 @@
                             aria-haspopup="true"
                         > -->
                         <a
-                            href="/Signin"
+                            href="/Login"
                             class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
-                            aria-current="page">Sign in</a
+                            aria-current="page">Log in</a
                         >
                         <!-- <span class="sr-only">Open user menu</span> -->
                         <!-- <img
