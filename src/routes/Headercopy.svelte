@@ -21,6 +21,7 @@
     const clickFAQ = () => {
         current = "FAQ";
     };
+
 </script>
 
 <nav class="bg-lime-100">

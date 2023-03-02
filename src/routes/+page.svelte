@@ -7,7 +7,7 @@
     </div>
 </header>
 
-<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
+<div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
     <!-- Replace with your content -->
     <div class="px-4 py-6 sm:px-0">
         <!-- <div
