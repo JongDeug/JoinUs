@@ -2,7 +2,7 @@
     import { Button } from "flowbite-svelte";
 </script>
 
-<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
+<div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
     <!-- Replace with your content -->
     <div class="p-8 border w-3/6 m-auto">
         <p class="text-center text-3xl font-bold mb-5">

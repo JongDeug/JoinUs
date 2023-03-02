@@ -8,7 +8,7 @@
     </div>
 </header>
 
-<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
+<div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
     <Accordion>
         <AccordionItem>
             <span slot="header" class="text-base flex gap-2 items-center">
