@@ -135,7 +135,7 @@
                 <div class="mt-4 text-center">
                     <a href="#" class="text-blue-700 underline"
                         >비밀번호를 잊으셨나요?</a
-                    >
+                    
                 </div>
             </form>
         </div>
