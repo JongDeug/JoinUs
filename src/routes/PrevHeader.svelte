@@ -21,7 +21,6 @@
     const clickFAQ = () => {
         current = "FAQ";
     };
-
 </script>
 
 <nav class="bg-lime-100">
@@ -177,6 +176,7 @@
                                 id="user-menu-button"
                                 aria-expanded="false"
                                 aria-haspopup="true"
+                                
                             >
                                 <span class="sr-only">Open my profile</span>
                                 <img

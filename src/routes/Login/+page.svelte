@@ -2,7 +2,7 @@
     import { Button } from "flowbite-svelte";
 </script>
 
-<div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
+<div id="layout" class="mx-auto max-w-7xl py-12 sm:px-6 lg:px-8  max-h-full">
     <!-- Replace with your content -->
     <div class="p-8 border w-3/6 m-auto">
         <p class="text-center text-3xl font-bold mb-5">
@@ -130,12 +130,13 @@
                 <Button
                     type="button"
                     btnClass="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >Continue</Button>
+                    >Continue</Button
+                >
 
                 <div class="mt-4 text-center">
                     <a href="#" class="text-blue-700 underline"
                         >비밀번호를 잊으셨나요?</a
-                    
+                    >
                 </div>
             </form>
         </div>

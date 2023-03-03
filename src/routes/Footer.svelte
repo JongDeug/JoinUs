@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
-                <a href="https://flowbite.com/" class="flex items-center">
+                <a href="/" class="flex items-center">
                     <img
                         src="https://flowbite.com/docs/images/logo.svg"
                         class="h-8 mr-3"
@@ -19,19 +19,25 @@
                     <h2
                         class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
                     >
-                        Resources
+                        Menu
                     </h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
                             <a
                                 href="https://flowbite.com/"
-                                class="hover:underline">Flowbite</a
+                                class="hover:underline">게시판</a
+                            >
+                        </li>
+                        <li class="mb-4">
+                            <a
+                                href="https://tailwindcss.com/"
+                                class="hover:underline">내 팀</a
                             >
                         </li>
                         <li>
                             <a
                                 href="https://tailwindcss.com/"
-                                class="hover:underline">Tailwind CSS</a
+                                class="hover:underline">FAQ</a
                             >
                         </li>
                     </ul>
@@ -45,13 +51,13 @@
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
                             <a
-                                href="https://github.com/themesberg/flowbite"
+                                href="https://github.com/JongDeug/JoinUs"
                                 class="hover:underline ">Github</a
                             >
                         </li>
                         <li>
                             <a
-                                href="https://discord.gg/4eeurUVvTy"
+                                href="https://discord.gg/jjEFW3WY"
                                 class="hover:underline">Discord</a
                             >
                         </li>
@@ -61,19 +67,19 @@
                     <h2
                         class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
                     >
-                        Legal
+                        이용약관 
                     </h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
                             <a href="#" class="hover:underline"
-                                >Privacy Policy</a
+                                >개인정보처리방침</a
                             >
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#" class="hover:underline"
                                 >Terms &amp; Conditions</a
                             >
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -155,7 +161,7 @@
                     >
                     <span class="sr-only">GitHub account</span>
                 </a>
-                <a
+                <!-- <a
                     href="#"
                     class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                 >
@@ -171,8 +177,8 @@
                         /></svg
                     >
                     <span class="sr-only">Dribbbel account</span>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
-</footer> 
+</footer>

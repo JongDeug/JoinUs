@@ -1,11 +1,8 @@
 <script>
+    import SmallHeader from "./SmallHeader.svelte";
 </script>
 
-<header class="bg-white shadow">
-    <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">게시판</h1>
-    </div>
-</header>
+<SmallHeader header="Board" />
 
 <div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
     <!-- Replace with your content -->

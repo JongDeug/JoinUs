@@ -1,18 +1,15 @@
 <script>
     import { Card, Button } from "flowbite-svelte";
+    import SmallHeader from "../SmallHeader.svelte";
     import Empty from "./Empty.svelte";
 </script>
 
-<header class="bg-white shadow">
-    <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">내 팀</h1>
-    </div>
-</header>
+<SmallHeader header="My Team" />
 
 <div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
     <div class="grid grid-cols-4 gap-4">
         <div>
-            <Card img="/images/image.png">
+            <Card img="/images/image.png" class="h-full">
                 <h5
                     class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
@@ -42,11 +39,11 @@
             </Card>
         </div>
         <div>
-            <Card img="/images/image.png" class="h-full"> 
+            <Card img="/images/image.png" class="h-full">
                 <h5
                     class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
-                세모반
+                    세모반
                 </h5>
                 <p
                     class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
@@ -71,7 +68,7 @@
                 </Button>
             </Card>
         </div>
-        <Empty/>
-        <Empty/>
+        <Empty />
+        <Empty />
     </div>
 </div>
