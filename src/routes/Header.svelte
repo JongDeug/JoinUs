@@ -1,7 +1,13 @@
 <script>
     import { fade, fly } from "svelte/transition";
+    import { clickOutside } from "./clickOutside";
+
+    // import { createEventDispatcher } from "svelte";
+    // const dispatch = createEventDispatcher();
+
     let profileStatus = false;
-    const handleProfileStatus= () => {
+
+    const handleProfileStatus = () => {
         profileStatus = !profileStatus;
     };
 
@@ -22,12 +28,15 @@
     };
 </script>
 
-<nav class="bg-lime-100">
+<nav class="bg-[#95E0C8]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0 text-4xl font-pacifco">
-                    <a href="/" on:click={clickBoard}> Join.us </a>
+                    <a href="/" on:click={clickBoard} class="flex content-center">
+                        <img src="/images/JoinUs.png" alt="" class="w-11 h-11 mr-3" />
+                        Join.us
+                    </a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -67,7 +76,7 @@
                         <a
                             href="Signup"
                             class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
-                            aria-current="page">Sign up</a
+                            aria-current="page">회원가입</a
                         >
                     </div>
                     <!-- 로그인 -->
@@ -75,7 +84,7 @@
                         <a
                             href="/Login"
                             class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
-                            aria-current="page">Log in</a
+                            aria-current="page">로그인</a
                         >
                     </div>
 
@@ -128,34 +137,48 @@
                                     aria-labelledby="user-menu-button"
                                     tabindex="-1"
                                     transition:fade={{ duration: 90 }}
+                                    use:clickOutside
+                                    on:clickOutside={handleProfileStatus}
                                 >
                                     <!-- Active: "bg-gray-100", Not Active: "" -->
                                     <a
-                                        href="#"
+                                        href="/Profile"
                                         class="block px-4 py-2 m-2 text-sm text-gray-700 rounded-lg hover:bg-slate-300 font-bold"
                                         role="menuitem"
                                         tabindex="-1"
                                         id="user-menu-item-0">Jong Hwan Kim</a
                                     >
 
-                                    <hr class="h-px mt-3 mb-2 bg-gray-200 border-0 dark:bg-gray-700 ">
+                                    <hr
+                                        class="h-px mt-3 mb-2 bg-gray-200 border-0 dark:bg-gray-700 "
+                                    />
 
                                     <a
                                         href="/MyPage"
                                         class="block px-4 py-2 m-2 text-sm  text-gray-700 rounded-lg hover:bg-slate-300"
                                         role="menuitem"
                                         tabindex="-1"
-                                        id="user-menu-item-1">Settings</a
+                                        id="user-menu-item-1">설정</a
                                     >
 
-                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700 ">
+                                    <a
+                                        href="/MyPage"
+                                        class="block px-4 py-2 m-2 text-sm  text-gray-700 rounded-lg hover:bg-slate-300"
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="user-menu-item-1"
+                                        >쪽지
+                                    </a>
+                                    <hr
+                                        class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700 "
+                                    />
 
                                     <a
                                         href="#"
                                         class="block px-4 py-2 m-2 text-sm text-gray-700 rounded-lg hover:bg-slate-300"
                                         role="menuitem"
                                         tabindex="-1"
-                                        id="user-menu-item-2">Sign out</a
+                                        id="user-menu-item-2">로그아웃</a
                                     >
                                 </div>
                             {/if}

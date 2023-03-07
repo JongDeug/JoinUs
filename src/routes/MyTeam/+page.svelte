@@ -1,19 +1,19 @@
 <script>
     import { Card, Button } from "flowbite-svelte";
     import SmallHeader from "../SmallHeader.svelte";
-    import Empty from "./Empty.svelte";
+    import Empty from "../../CustomComponent/Empty.svelte";
 </script>
 
 <SmallHeader header="My Team" />
 
 <div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full">
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid grid-cols-4 grid-rows-2 gap-4">
         <div>
             <Card img="/images/image.png" class="h-full">
                 <h5
                     class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
-                    Join Ussdfsdf sdfs fdsdf s
+                    JoinUs
                 </h5>
                 <p
                     class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
@@ -43,7 +43,7 @@
                 <h5
                     class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
-                    세모반
+                    abcd 
                 </h5>
                 <p
                     class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
@@ -68,6 +68,10 @@
                 </Button>
             </Card>
         </div>
+        <Empty />
+        <Empty />
+        <Empty />
+        <Empty />
         <Empty />
         <Empty />
     </div>

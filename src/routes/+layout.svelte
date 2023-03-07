@@ -5,9 +5,8 @@
 </script>
 
 <div class="min-h-full">
-    <!-- <Header /> -->
     <Header />
-    <main class="min-h-[700px]">
+    <main class="min-h-[700px] w-full">
         <slot />
     </main>
     <Footer />
