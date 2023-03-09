@@ -12,6 +12,7 @@
     } from "flowbite-svelte";
     import Svg from "../../CustomComponent/Svg.svelte";
     import Avatar from "../../CustomComponent/Avatar.svelte";
+    import Button from "../../CustomComponent/Button.svelte";
 
     // file input tag의 id 설정
     let fileuploadprops = {
@@ -19,25 +20,25 @@
     };
 </script>
 
-<SmallHeader header="My Page" />
+<SmallHeader header="My Page" padding=24/>
 
 <div
     id="layout"
-    class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full flex"
+    class="max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full flex m-auto justify-center"
 >
     <Sidebar />
 
     <!-- 분리해야함 -->
-    <div class="ml-3 block w-[100%]">
-        <Breadcrumb aria-label="Solid background breadcrumb example" solid>
+    <div class="ml-3 block w-[70%]">
+        <Breadcrumb aria-label="Solid background breadcrumb example" class="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-700">
             <BreadcrumbItem href="/" home>홈</BreadcrumbItem>
             <BreadcrumbItem href="/">설정</BreadcrumbItem>
             <BreadcrumbItem>회원정보 수정</BreadcrumbItem>
         </Breadcrumb>
 
         <!-- 사용자 -->
-        <div class="mt-3 p-5 rounded-lg bg-gray-50">
-            <div class="border-2 rounded-md p-10">
+        <div class="mt-3 p-10 rounded-lg shadow-lg border-2 border-indigo-200">
+            <!-- <div class="rounded-md p-10"> -->
                 <h1 class="font-bold text-4xl mb-7">사용자</h1>
                 <!-- 이름 -->
                 <div class="mb-6 w-[40%]">
@@ -107,12 +108,11 @@
                         <!-- <Fileupload {...fileuploadprops} /> -->
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
 
         <!-- 개인 포트폴리오 -->
-        <div class="mt-3 p-5 rounded-lg bg-gray-50">
-            <div class="border-2 rounded-md p-10">
+        <div class="mt-3 p-10 rounded-lg shadow-lg border-2 border-indigo-200">
                 <h1 class="font-bold text-4xl mb-7">개인 포트폴리오</h1>
                 <!-- 간단한 자기소개 -->
                 <div class="mb-6 w-[40%]">
@@ -143,12 +143,18 @@
                     <Label for="default-input" class="block mb-2"
                         >기술스택</Label
                     >
-                    <!-- <div class="grid grid-cols-3"> -->
+                    <div class="grid grid-cols-2 gap-4">
                         <Checkbox>Default checkbox</Checkbox>
                         <Checkbox checked>Checked state</Checkbox>
-                    <!-- </div> -->
+                        <Checkbox checked>Checked state</Checkbox>
+                        <Checkbox checked>Checked state</Checkbox>
+                    </div>
                 </div>
-            </div>
+        </div>
+
+        <!-- 저장 버튼 -->
+        <div class="mt-3 p-5 rounded-lg shadow-lg border-2 border-indigo-200">
+            <Button number=1 content="회원정보 수정 확인" />
         </div>
     </div>
 </div>

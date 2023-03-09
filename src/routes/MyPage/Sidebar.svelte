@@ -19,7 +19,7 @@
 
 <Sidebar>
     <div
-        class="overflow-y-auto h-[600px] py-4 px-3 bg-gray-50 dark:bg-gray-800 rounded-lg"
+        class="overflow-y-auto py-4 px-3  dark:bg-gray-800 rounded-lg"
     >
         <SidebarGroup>
             <SidebarBrand {site} />
@@ -60,8 +60,8 @@
                         /></svg
                     >
                 </svelte:fragment>
-                <SidebarDropdownItem label="회원정보 수정" />
-                <SidebarDropdownItem label="비밀번호 변경" />
+                <SidebarDropdownItem label="회원정보 수정" href="/MyPage"/>
+                <SidebarDropdownItem label="비밀번호 변경" href="/MyPage/ChangePwd"/>
                 <SidebarDropdownItem label="회원 탈퇴" />
             </SidebarDropdownWrapper>
 
@@ -88,7 +88,7 @@
                     >
                 </svelte:fragment>
             </SidebarItem> -->
-            <SidebarItem label="내 팀">
+            <SidebarItem label="내 팀" href="/MyPage/MyTeam">
                 <svelte:fragment slot="icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

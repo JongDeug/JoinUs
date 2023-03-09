@@ -33,8 +33,16 @@
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0 text-4xl font-pacifco">
-                    <a href="/" on:click={clickBoard} class="flex content-center">
-                        <img src="/images/JoinUs.png" alt="" class="w-11 h-11 mr-3" />
+                    <a
+                        href="/"
+                        on:click={clickBoard}
+                        class="flex content-center"
+                    >
+                        <img
+                            src="/images/JoinUs.png"
+                            alt=""
+                            class="w-11 h-11 mr-3"
+                        />
                         Join.us
                     </a>
                 </div>
@@ -111,7 +119,7 @@
                                 />
                             </svg>
                         </button>
-                        
+
                         <!-- 프로필 사진 -->
                         <div class="relative ml-3">
                             <button
@@ -148,7 +156,8 @@
                                         class="block px-4 py-2 m-2 text-sm text-gray-700 rounded-lg hover:bg-slate-300 font-bold"
                                         role="menuitem"
                                         tabindex="-1"
-                                        id="user-menu-item-0">Jong Hwan Kim <br/>@id</a
+                                        id="user-menu-item-0"
+                                        ><span class="mb-2 inline-block">Jong Hwan Kim</span> <br />@id</a
                                     >
 
                                     <hr
