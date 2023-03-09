@@ -19,7 +19,7 @@
 
 <Sidebar>
     <div
-        class="overflow-y-auto h-[600px] py-4 px-3 bg-gray-50 rounded dark:bg-gray-800"
+        class="overflow-y-auto h-[600px] py-4 px-3 bg-gray-50 dark:bg-gray-800 rounded-lg"
     >
         <SidebarGroup>
             <SidebarBrand {site} />

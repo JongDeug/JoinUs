@@ -35,11 +35,11 @@
             /></svg
         >
     </div>
+{:else if number == 1}
+    <!-- 이미지 있을 때 -->
+    <img
+        alt=""
+        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        class="mr-5 rounded-full p-1 ring-2 ring-gray-300 dark:ring-gray-500 w-14 h-14 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300"
+    />
 {/if}
-
-<!-- 이미지 있을 때 -->
-<!-- <img
-            alt=""
-            src="/images/profile-picture-2.webp"
-            class="rounded-full p-1 ring-2 ring-gray-300 dark:ring-gray-500 w-10 h-10 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300"
-        /> -->
