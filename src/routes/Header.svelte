@@ -90,6 +90,7 @@
 
                     <!-- 로그인인 상태라면 -->
                     <div class="ml-4 flex items-center md:ml-6">
+                        <!-- 알림 버튼 -->
                         <button
                             type="button"
                             class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -110,7 +111,8 @@
                                 />
                             </svg>
                         </button>
-
+                        
+                        <!-- 프로필 사진 -->
                         <div class="relative ml-3">
                             <button
                                 type="button"
@@ -146,7 +148,7 @@
                                         class="block px-4 py-2 m-2 text-sm text-gray-700 rounded-lg hover:bg-slate-300 font-bold"
                                         role="menuitem"
                                         tabindex="-1"
-                                        id="user-menu-item-0">Jong Hwan Kim</a
+                                        id="user-menu-item-0">Jong Hwan Kim <br/>@id</a
                                     >
 
                                     <hr
