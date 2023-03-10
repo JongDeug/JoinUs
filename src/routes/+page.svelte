@@ -4,6 +4,8 @@
     import DropdownItem from "../CustomComponent/DropdownItem.svelte";
     import TableHeader from "../CustomComponent/TableHeader.svelte";
     import TableRow from "../CustomComponent/TableRow.svelte";
+    import { Pagination } from "flowbite-svelte";
+    import { page } from "$app/stores";
 
     let dropdownStatus = false;
     const handleDropdownStatus = () => {
@@ -17,8 +19,41 @@
         { title: "test4", writer: "kim", createTime: "2023-03-10", hit: "30" },
         { title: "test5", writer: "kim", createTime: "2023-03-10", hit: "30" },
         { title: "test5", writer: "kim", createTime: "2023-03-10", hit: "30" },
-
     ];
+
+    let helper = { start: 1, end: 10, total: 100 };
+    $: activeUrl = $page.url.searchParams.get("page");
+    let pages = [
+        { name: 1, href: "/components/pagination?page=1" },
+        { name: 2, href: "/components/pagination?page=2" },
+        { name: 3, href: "/components/pagination?page=3" },
+        { name: 4, href: "/components/pagination?page=4" },
+        { name: 5, href: "/components/pagination?page=5" },
+    ];
+
+    $: {
+        pages.forEach((page) => {
+            let splitUrl = page.href.split("?");
+            let queryString = splitUrl.slice(1).join("?");
+            const hrefParams = new URLSearchParams(queryString);
+            let hrefValue = hrefParams.get("page");
+            if (hrefValue === activeUrl) {
+                page.active = true;
+            } else {
+                page.active = false;
+            }
+        });
+        pages = pages;
+    }
+
+    const previous = () => {
+        alert(
+            "Previous btn clicked. Make a call to your server to fetch data."
+        );
+    };
+    const next = () => {
+        alert("Next btn clicked. Make a call to your server to fetch data.");
+    };
 </script>
 
 <SmallHeader header="Board" />
@@ -109,101 +144,24 @@
                 </tbody>
             </table>
 
-            <nav
-                class="flex items-center justify-between pt-4"
-                aria-label="Table navigation"
-            >
-                <span
-                    class="text-sm font-normal text-gray-500 dark:text-gray-400"
-                    >Showing <span
+            <div class="flex mt-5 justify-between">
+                <div class="text-sm text-gray-700 dark:text-gray-400">
+                    Showing <span
                         class="font-semibold text-gray-900 dark:text-white"
-                        >1-10</span
+                        >{helper.start}</span
+                    >
+                    to
+                    <span class="font-semibold text-gray-900 dark:text-white"
+                        >{helper.end}</span
                     >
                     of
                     <span class="font-semibold text-gray-900 dark:text-white"
-                        >1000</span
-                    ></span
-                >
+                        >{helper.total}</span
+                    > Entries
+                </div>
 
-                <ul class="inline-flex items-center -space-x-px">
-                    <li>
-                        <a
-                            href="#"
-                            class="block px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                        >
-                            <span class="sr-only">Previous</span>
-                            <svg
-                                class="w-5 h-5"
-                                aria-hidden="true"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                                ><path
-                                    fill-rule="evenodd"
-                                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"
-                                /></svg
-                            >
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            class="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                            >1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            class="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                            >2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            aria-current="page"
-                            class="block z-10 px-3 py-2 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
-                            >3</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            class="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                            >...</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            class="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                            >100</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            class="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                        >
-                            <span class="sr-only">Next</span>
-                            <svg
-                                class="w-5 h-5"
-                                aria-hidden="true"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                                ><path
-                                    fill-rule="evenodd"
-                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                    clip-rule="evenodd"
-                                /></svg
-                            >
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                <Pagination {pages} on:previous={previous} on:next={next} />
+            </div>
         </div>
     </div>
     <!-- /End replace -->

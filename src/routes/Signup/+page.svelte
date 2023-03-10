@@ -1,6 +1,6 @@
 <div id="layout" class="mx-auto max-w-7xl py-12 sm:px-6 lg:px-8  max-h-full">
     <!-- Replace with your content -->
-    <div class="p-8 border w-3/6 m-auto">
+    <div class="p-8 border w-3/6 m-auto shadow-lg">
             <p class="text-center text-3xl font-bold mb-5">
                 Join.us에 오신 것을 환영합니다.😀😀
                 <span class="text-sm">
@@ -81,7 +81,7 @@
                     class="relative font-thin text-slate-500 text-sm bg-white p-0 inline-block max-w-[75%] z-10"
                 >
                     "Join.us에서 새로운 아이디와 비밀번호를 만드려면<br/>
-                <a class="underline text-blue-500" href="">이곳을 클릭해주세요.</a>"
+                <a class="underline text-blue-500" href="/Signup/NoAccount">이곳을 클릭해주세요.</a>"
                 </span>
             </div>
 

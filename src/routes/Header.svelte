@@ -63,7 +63,7 @@
                             class="{current === 'MyTeam'
                                 ? 'bg-gray-900 text-white'
                                 : ''} hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:ring-4 focus:outline-none"
-                            on:click={clickMyTeam}>내 팀</a
+                            on:click={clickMyTeam}>내 팀(ing)</a
                         >
 
                         <a

@@ -2,8 +2,6 @@
     import Sidebar from "./Sidebar.svelte";
     import SmallHeader from "../SmallHeader.svelte";
     import {
-        Breadcrumb,
-        BreadcrumbItem,
         Label,
         Input,
         InputAddon,
@@ -13,6 +11,7 @@
     import Svg from "../../CustomComponent/Svg.svelte";
     import Avatar from "../../CustomComponent/Avatar.svelte";
     import Button from "../../CustomComponent/Button.svelte";
+    import Breadcrumb from "../../CustomComponent/Breadcrumb.svelte";
 
     // file input tag의 id 설정
     let fileuploadprops = {
@@ -29,16 +28,12 @@
     <Sidebar />
 
     <!-- 분리해야함 -->
-    <div class="ml-3 block w-[70%]">
-        <Breadcrumb aria-label="Solid background breadcrumb example" class="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-700">
-            <BreadcrumbItem href="/" home>홈</BreadcrumbItem>
-            <BreadcrumbItem href="/">설정</BreadcrumbItem>
-            <BreadcrumbItem>회원정보 수정</BreadcrumbItem>
-        </Breadcrumb>
+    <div class="ml-5 block w-[70%]">
+    
+        <Breadcrumb content="회원정보 수정" />
 
         <!-- 사용자 -->
-        <div class="mt-3 p-10 rounded-lg shadow-lg border-2 border-indigo-200">
-            <!-- <div class="rounded-md p-10"> -->
+        <div class="mt-3 p-10 rounded-lg shadow-md border ">
                 <h1 class="font-bold text-4xl mb-7">사용자</h1>
                 <!-- 이름 -->
                 <div class="mb-6 w-[40%]">
@@ -108,11 +103,10 @@
                         <!-- <Fileupload {...fileuploadprops} /> -->
                     </div>
                 </div>
-            <!-- </div> -->
         </div>
 
         <!-- 개인 포트폴리오 -->
-        <div class="mt-3 p-10 rounded-lg shadow-lg border-2 border-indigo-200">
+        <div class="mt-3 p-10 rounded-lg  shadow-md border">
                 <h1 class="font-bold text-4xl mb-7">개인 포트폴리오</h1>
                 <!-- 간단한 자기소개 -->
                 <div class="mb-6 w-[40%]">
@@ -153,8 +147,8 @@
         </div>
 
         <!-- 저장 버튼 -->
-        <div class="mt-3 p-5 rounded-lg shadow-lg border-2 border-indigo-200">
+        <!-- <div class="mt-3 p-2 rounded-lg  shadow-md border "> -->
             <Button number=1 content="회원정보 수정 확인" />
-        </div>
+        <!-- </div> -->
     </div>
 </div>

@@ -19,7 +19,7 @@
 
 <Sidebar>
     <div
-        class="overflow-y-auto py-4 px-3  dark:bg-gray-800 rounded-lg"
+        class="overflow-y-auto py-4 px-3  dark:bg-gray-800 border-2 rounded-lg  border-indigo-200"
     >
         <SidebarGroup>
             <SidebarBrand {site} />
@@ -108,7 +108,7 @@
                     >
                 </svelte:fragment>
             </SidebarItem>
-            <SidebarItem label="내가 작성한 게시글">
+            <SidebarItem label="내가 작성한 게시글" href="/MyPage/MyPost">
                 <svelte:fragment slot="icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

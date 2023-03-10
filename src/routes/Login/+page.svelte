@@ -4,7 +4,7 @@
 
 <div id="layout" class="mx-auto max-w-7xl py-12 sm:px-6 lg:px-8  max-h-full">
     <!-- Replace with your content -->
-    <div class="p-8 border w-3/6 m-auto">
+    <div class="p-8 border w-3/6 m-auto shadow-lg">
         <p class="text-center text-3xl font-bold mb-5">
             Join.us에 오신 것을 환영합니다.😀😀
             <span class="text-sm">
