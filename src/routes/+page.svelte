@@ -82,7 +82,7 @@
                     {#if dropdownStatus}
                         <div
                             class="z-10 w-48 bg-white border-2 divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 {dropdownStatus}"
-                            style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(4px, -260px, 0px);"
+                            style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(4px, -210px, 0px);"
                         >
                             <ul
                                 class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"

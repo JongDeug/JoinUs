@@ -1,5 +1,5 @@
 <script>
-    import Sidebar from "./Sidebar.svelte";
+    import Sidebar from "../../CustomComponent/Sidebar.svelte";
     import SmallHeader from "../SmallHeader.svelte";
     import {
         Label,
@@ -25,12 +25,12 @@
     id="layout"
     class="max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full flex m-auto justify-center"
 >
-    <Sidebar />
+    <Sidebar number=0/>
 
     <!-- 분리해야함 -->
     <div class="ml-5 block w-[70%]">
     
-        <Breadcrumb content="회원정보 수정" />
+        <Breadcrumb prevContent="설정" nextContent="회원정보 수정" />
 
         <!-- 사용자 -->
         <div class="mt-3 p-10 rounded-lg shadow-md border ">

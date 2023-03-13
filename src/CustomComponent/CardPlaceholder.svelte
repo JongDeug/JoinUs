@@ -1,4 +1,29 @@
-<div class="bg-slate-50 border-2 rounded-md border-dashed" />
+<script>
+    import {Button} from "flowbite-svelte";
+</script>
+
+<div class="bg-slate-50 border-2 rounded-md border-dashed flex justify-center items-center">
+    <Button color="default">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><circle cx="12" cy="12" r="10" /><line
+                x1="12"
+                y1="8"
+                x2="12"
+                y2="16"
+            /><line x1="8" y1="12" x2="16" y2="12" /></svg
+        >
+        </Button
+    >
+</div>
 <!-- 
 <div
     role="status"

@@ -1,6 +1,6 @@
 <script>
     import SmallHeader from "../../SmallHeader.svelte";
-    import Sidebar from "../Sidebar.svelte";
+    import Sidebar from "../../../CustomComponent/Sidebar.svelte";
     import Breadcrumb from "../../../CustomComponent/Breadcrumb.svelte";
 
     import {
@@ -71,11 +71,11 @@
     id="layout"
     class="max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full flex m-auto justify-center"
 >
-    <Sidebar />
+    <Sidebar number=0/>
 
     <!-- 비밀번호 변경 -->
     <div class="ml-5 block w-[70%]">
-        <Breadcrumb content="내가 작성한 게시글" />
+        <Breadcrumb prevContent="설정" nextContent="내가 작성한 게시글" />
 
         <div class="mt-3 p-10 rounded-lg shadow-md border">
             <h1 class="font-bold text-4xl mb-7">내가 작성한 게시글</h1>
