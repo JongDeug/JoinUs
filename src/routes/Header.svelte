@@ -16,7 +16,7 @@
         mobileMenu = !mobileMenu;
     };
 
-    let current = "Board";
+    let current = "";
     const clickBoard = () => {
         current = "Board";
     };

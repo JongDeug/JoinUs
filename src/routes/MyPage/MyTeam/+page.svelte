@@ -11,7 +11,7 @@
     } from "flowbite-svelte";
     import Breadcrumb from "../../../CustomComponent/Breadcrumb.svelte";
     import SmallHeader from "../../SmallHeader.svelte";
-    import Sidebar from "../Sidebar.svelte";
+    import Sidebar from "../../../CustomComponent/Sidebar.svelte";
     import { page } from "$app/stores";
 
     let searchTerm = "";
@@ -68,9 +68,9 @@
     id="layout"
     class="max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full flex m-auto justify-center"
 >
-    <Sidebar />
+    <Sidebar number=0/>
     <div class="ml-5 block w-[70%]">
-        <Breadcrumb content="내 팀" />
+        <Breadcrumb prevContent="설정" nextContent="내 팀" />
 
         <div class="mt-3 p-10 rounded-lg border shadow-md">
             <h1 class="font-bold text-4xl mb-7">내 팀 목록</h1>
