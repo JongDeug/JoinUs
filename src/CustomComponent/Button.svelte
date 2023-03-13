@@ -1,6 +1,7 @@
 <script>
     export let number;
     export let content;
+    export let location;
 </script>
 
 {#if number == 0}
@@ -13,7 +14,7 @@
     </div>
 {:else if number == 1}
     <a
-        href="#"
+        href="{location}"
         class="block shadow-md mt-5 py-3 text-center font-bold text-1xl focus:ring-4 focus:outline-none text-white bg-blue-600 hover:bg-blue-800 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 rounded-lg"
         >{content}</a
     >

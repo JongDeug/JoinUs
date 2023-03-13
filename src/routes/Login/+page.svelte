@@ -134,7 +134,7 @@
                 >
 
                 <div class="mt-4 text-center">
-                    <a href="/ForgotPwd" class="text-blue-700 underline"
+                    <a href="/Login/ForgotPwd" class="text-blue-700 underline"
                         >비밀번호를 잊으셨나요?</a
                     >
                 </div>
