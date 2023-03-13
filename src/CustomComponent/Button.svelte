@@ -21,7 +21,7 @@
     <button
         type="button"
         border="true"
-        class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-[0.85rem] leading-none text-sm text-white bg-gray-800 hover:bg-gray-900 focus:ring-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg"
+        class="w-[100px] p-[0.71rem] ml-3 text-center font-medium focus:ring-4 focus:outline-none  items-center justify-center text-sm text-white bg-gray-800 hover:bg-gray-900 focus:ring-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg"
         >중복 확인</button
     >
 {/if}

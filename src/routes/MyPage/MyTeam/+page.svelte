@@ -76,7 +76,7 @@
             <h1 class="font-bold text-4xl mb-7">내 팀 목록</h1>
 
             <TableSearch
-                color="green"
+                color="default"
                 placeholder="Search by maker name"
                 hoverable={true}
                 bind:inputValue={searchTerm}

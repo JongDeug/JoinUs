@@ -15,18 +15,17 @@
     <div class="p-8 border w-[60%] m-auto shadow-lg">
         <h1 class="font-bold text-4xl mb-7">회원가입</h1>
 
-        <div class="mb-6 flex items-center">
-            <div class="w-[83%] mr-2.5">
-                <Label for="success" color="green" class="block mb-2"
-                    >아이디</Label
-                >
+        <div class="mr-2.5 mb-6">
+            <Label for="success" color="green" class="block mb-2">아이디</Label>
+
+            <div class="flex items-center">
                 <Input id="success" color="green" placeholder="Success input" />
-                <Helper class="mt-2" color="green"
-                    ><span class="font-medium">Well done!</span> Some success messsage.</Helper
-                >
+                <Button number="2" />
             </div>
 
-            <Button number=2 />
+            <Helper class="mt-2" color="green"
+                ><span class="font-medium">Well done!</span> Some success messsage.</Helper
+            >
         </div>
 
         <div class="mb-6">
@@ -48,6 +47,6 @@
             >
         </div>
 
-   
+        <Button number="1" content="확인" />
     </div>
 </div>
