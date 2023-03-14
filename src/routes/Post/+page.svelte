@@ -1,6 +1,7 @@
 <script>
     import { quill } from "svelte-quill";
     import SmallHeader from "../SmallHeader.svelte";
+    import Button from "../../CustomComponent/Button.svelte";
 
     const options = {
         modules: {
@@ -24,15 +25,23 @@
 
 <SmallHeader header="Create Post" />
 
-<div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 max-h-full flex justify-center">
-    <div class="w-[70%] h-[530px] shadow-lg ">
+<div id="layout" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 max-h-full">
+    <div class="w-[70%]">
         <div
             class="editor"
             use:quill={options}
             on:text-change={(e) => (content = e.detail)}
         />
 
-        <!-- Resulting HTML:
-        {@html content.html} -->
+        <button
+            type="button"
+            class="mt-3 text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 rounded-lg"
+            >저장</button
+        >
     </div>
+
+    <!-- <div>
+        Resulting HTML:
+        {@html content.html}
+    </div> -->
 </div>

@@ -3,6 +3,7 @@
     export let content;
     export let location;
     export let usage;
+    export let btnClass;
 </script>
 
 {#if number == 0}
@@ -44,4 +45,5 @@
         class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-blue-800 hover:bg-blue-900 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 rounded-lg"
         >{content}</button
     >
+
 {/if}
