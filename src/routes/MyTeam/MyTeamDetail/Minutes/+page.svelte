@@ -1,4 +1,9 @@
 <script>
+    import SmallHeader from "../../../SmallHeader.svelte";
+    import Sidebar from "../../../../CustomComponent/Sidebar.svelte";
+    import Breadcrumb from "../../../../CustomComponent/Breadcrumb.svelte";
+    import TableSearch from "../../../../CustomComponent/TableSearch.svelte";
+
     import {
         Table,
         TableBody,
@@ -6,12 +11,11 @@
         TableBodyRow,
         TableHead,
         TableHeadCell,
+        Checkbox,
         Pagination,
+        Button,
     } from "flowbite-svelte";
-    import Breadcrumb from "../../../CustomComponent/Breadcrumb.svelte";
-    import SmallHeader from "../../SmallHeader.svelte";
-    import Sidebar from "../../../CustomComponent/Sidebar.svelte";
-    import TableSearch from "../../../CustomComponent/TableSearch.svelte";
+
     import { page } from "$app/stores";
 
     let searchTerm = "";
@@ -62,49 +66,58 @@
     let helper = { start: 1, end: 10, total: 100 };
 </script>
 
-<SmallHeader header="My Page" />
-
+<SmallHeader header="abcd" />
 <div
     id="layout"
     class="max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full flex m-auto justify-center"
 >
-    <Sidebar number="0" />
+    <Sidebar number="1" />
+
     <div class="ml-5 block w-[70%]">
-        <Breadcrumb prevContent="설정" nextContent="내 팀" />
+        <Breadcrumb prevContent="내 팀" nextContent="회의록" />
 
-        <div class="mt-3 p-10 rounded-lg border shadow-md">
-            <h1 class="font-bold text-4xl mb-7">내 팀 목록</h1>
-
-            <TableSearch number=3 content="팀 생성">
+        <div class="rounded-lg shadow-md border p-10 mt-6">
+            <h1 class="font-bold text-4xl mb-7">회의록</h1>
+            <!-- <TableSearch
+                color="default"
+                placeholder="Search by maker name"
+                hoverable={true}
+                bind:inputValue={searchTerm}
+            > -->
+            <TableSearch number=3 content="회의록 작성">
                 <Table hoverable={true}>
                     <TableHead>
-                        <TableHeadCell>ID</TableHeadCell>
-                        <TableHeadCell>팀 명</TableHeadCell>
-                        <TableHeadCell>팀원 수</TableHeadCell>
-                        <TableHeadCell>생성일자</TableHeadCell>
+                        <TableHeadCell class="!p-4">
+                            <Checkbox />
+                        </TableHeadCell>
+                        <TableHeadCell>제목</TableHeadCell>
+                        <TableHeadCell>글쓴이</TableHeadCell>
+                        <TableHeadCell>날짜</TableHeadCell>
                         <TableHeadCell>편집</TableHeadCell>
                     </TableHead>
                     <TableBody class="divide-y">
                         {#each filteredItems as item}
                             <TableBodyRow>
+                                <TableBodyCell class="!p-4">
+                                    <Checkbox />
+                                </TableBodyCell>
                                 <TableBodyCell>{item.id}</TableBodyCell>
                                 <TableBodyCell>{item.maker}</TableBodyCell>
                                 <TableBodyCell>{item.type}</TableBodyCell>
-                                <TableBodyCell>{item.make}</TableBodyCell>
                                 <TableBodyCell>
                                     <a
                                         href="/tables"
                                         class="font-medium text-blue-600 hover:underline dark:text-blue-500"
                                     >
                                         Edit
-                                    </a></TableBodyCell
-                                >
+                                    </a>
+                                </TableBodyCell>
                             </TableBodyRow>
                         {/each}
                     </TableBody>
                 </Table>
+                <!-- </TableSearch> -->
             </TableSearch>
-
             <div class="flex mt-5 justify-between">
                 <div class="text-sm text-gray-700 dark:text-gray-400">
                     Showing <span

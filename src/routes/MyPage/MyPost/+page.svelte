@@ -2,9 +2,9 @@
     import SmallHeader from "../../SmallHeader.svelte";
     import Sidebar from "../../../CustomComponent/Sidebar.svelte";
     import Breadcrumb from "../../../CustomComponent/Breadcrumb.svelte";
+    import TableSearch from "../../../CustomComponent/TableSearch.svelte";
 
     import {
-        TableSearch,
         Table,
         TableBody,
         TableBodyCell,
@@ -65,13 +65,13 @@
     let helper = { start: 1, end: 10, total: 100 };
 </script>
 
-<SmallHeader header="My Page" padding="24" />
+<SmallHeader header="My Page" />
 
 <div
     id="layout"
     class="max-w-7xl py-6 sm:px-6 lg:px-8  max-h-full flex m-auto justify-center"
 >
-    <Sidebar number=0/>
+    <Sidebar number="0" />
 
     <!-- 비밀번호 변경 -->
     <div class="ml-5 block w-[70%]">
@@ -80,12 +80,13 @@
         <div class="mt-3 p-10 rounded-lg shadow-md border">
             <h1 class="font-bold text-4xl mb-7">내가 작성한 게시글</h1>
 
-            <TableSearch
+            <!-- <TableSearch
                 color="default"
                 placeholder="Search by maker name"
                 hoverable={true}
                 bind:inputValue={searchTerm}
-            >
+            > -->
+            <TableSearch number=3 content="게시글 작성">
                 <Table hoverable={true}>
                     <TableHead>
                         <TableHeadCell class="!p-4">
@@ -95,9 +96,7 @@
                         <TableHeadCell>글쓴이</TableHeadCell>
                         <TableHeadCell>날짜</TableHeadCell>
                         <TableHeadCell>조회수</TableHeadCell>
-                        <TableHeadCell>
-                            <span class="sr-only"> Edit </span>
-                        </TableHeadCell>
+                        <TableHeadCell>편집</TableHeadCell>
                     </TableHead>
                     <TableBody class="divide-y">
                         {#each filteredItems as item}

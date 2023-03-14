@@ -187,7 +187,7 @@
                     </svelte:fragment>
                 </SidebarItem>
 
-                <SidebarItem label="회의록" href="/MyTeam/Minutes">
+                <SidebarItem label="회의록" href="/MyTeam/MyTeamDetail/Minutes">
                     <svelte:fragment slot="icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@
                         >
                     </svelte:fragment>
                 </SidebarItem>
-                <SidebarItem label="캘린더" href="/MyTeam/Calendar">
+                <SidebarItem label="캘린더" href="/MyTeam/MyTeamDetail/Calendar">
                     <svelte:fragment slot="icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@
                         >
                     </svelte:fragment>
                 </SidebarItem>
-                <SidebarItem label="설정" href="/MyTeam/Settings">
+                <SidebarItem label="설정" href="/MyTeam/MyTeamDetail/Settings">
                     <svelte:fragment slot="icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

@@ -24,7 +24,9 @@
 		"@fullcalendar/daygrid": "^5.11.4",
 		"@fullcalendar/interaction": "^5.11.4",
 		"@fullcalendar/resource-timeline": "^5.11.4",
+		"@fullcalendar/timegrid": "^5.11.4",
 		"flowbite": "^1.6.3",
-		"flowbite-svelte": "^0.30.3"
+		"flowbite-svelte": "^0.30.3",
+		"svelte-quill": "^1.2.0"
 	}
 }

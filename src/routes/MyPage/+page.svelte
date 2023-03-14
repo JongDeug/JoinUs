@@ -19,7 +19,7 @@
     };
 </script>
 
-<SmallHeader header="My Page" padding=24/>
+<SmallHeader header="My Page"/>
 
 <div
     id="layout"

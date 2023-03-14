@@ -6,7 +6,9 @@
     <div
         class="mx-auto max-w-7xl py-6 px-4 sm:px-6 {(header == 'Board') |
         (header == 'My Team') |
-        (header == 'FAQ')
+        (header == 'FAQ') |
+        (header == 'Post Message') |
+        (header == 'Create Post')
             ? 'lg:px-8'
             : 'lg:px-20'}"
     >

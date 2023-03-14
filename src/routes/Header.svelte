@@ -173,12 +173,12 @@
                                     >
 
                                     <a
-                                        href="/MyPage"
+                                        href="/PostMessage"
                                         class="block px-4 py-2 m-2 text-sm  text-gray-700 rounded-lg hover:bg-slate-300"
                                         role="menuitem"
                                         tabindex="-1"
                                         id="user-menu-item-1"
-                                        >쪽지
+                                        >쪽지함
                                     </a>
                                     <hr
                                         class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700 "

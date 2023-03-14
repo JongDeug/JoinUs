@@ -1,6 +1,6 @@
 <script>
-    import SmallHeader from "../../SmallHeader.svelte";
-    import Sidebar from "../../../CustomComponent/Sidebar.svelte";
+    import SmallHeader from "../../../SmallHeader.svelte";
+    import Sidebar from "../../../../CustomComponent/Sidebar.svelte";
     import {
         Label,
         Avatar,
@@ -10,8 +10,8 @@
         Search,
         CloseButton,
     } from "flowbite-svelte";
-    import Breadcrumb from "../../../CustomComponent/Breadcrumb.svelte";
-    import Button from "../../../CustomComponent/Button.svelte";
+    import Breadcrumb from "../../../../CustomComponent/Breadcrumb.svelte";
+    import Button from "../../../../CustomComponent/Button.svelte";
 
     import { Textarea } from "flowbite-svelte";
     let textareaprops = {
