@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-<header class="bg-white shadow">
-    <div
-        class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8"
-    >
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">
-            {header}
-        </h1>
-    </div>
-</header>
-=======
 <script>
     import SmallHeader from "../../SmallHeader.svelte";
     import Sidebar from "../../../CustomComponent/Sidebar.svelte";
@@ -113,4 +102,3 @@
         </div>
     </div>
 </div>
->>>>>>> 8785497aac2a1fbba322ced3371a7fd6694c56c5

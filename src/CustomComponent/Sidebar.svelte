@@ -163,6 +163,7 @@
         <div
             class="overflow-y-auto py-4 px-3  dark:bg-gray-800 border-2 rounded-lg  border-indigo-200"
         >
+            <SidebarBrand {site} />
             <SidebarGroup>
                 <SidebarItem label="대시보드" href="/MyTeam/MyTeamDetail">
                     <svelte:fragment slot="icon">
